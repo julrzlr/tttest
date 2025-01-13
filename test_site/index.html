@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Обратная связь</title>
+    <script src="js/main.js"></script>
+</head>
+<body>
+    
+    <h1> Test test test</h1>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Velit officiis a, voluptate fugit, rem odio minima suscipit blanditiis minus praesentium quasi! Fugiat reprehenderit ut autem? Quis natus veniam nihil ipsa?</p>
+
+    <div class="form-container form_selen">
+        
+        <form id="feedback-form" class="st-form" >
+            <h2>Обратная связь</h2>
+            <label for="name">
+                <input type="text" class="user_name" name="name" placeholder="ФИО" required value>
+            </label>
+            <label for="phone">
+                <input type="tel" class="user_phone" name="phone" placeholder="Телефон" required value>
+            </label>
+            <button type="submit" class="btn_submit">Отправить</button>
+        </form>
+        
+    </div>
+
+    <div class="popup j-popup feedback-form-success" id="success-popup-feedback">
+        <div class="popup-content">
+            <span class="close j-close-popup" id="close-success">&times;</span>
+            <p>Форма первая успешно отправлена!</p>
+        </div>
+    </div>
+
+    <div class="form_selen">
+        <button id="call-order-btn">Заказать звонок</button>
+    </div>
+    <div class="popup j-popup" id="call-popup">
+        <div class="popup-content">
+            <span class="close j-close-popup" id="close-popup">&times;</span>
+            <form id="call-form" class="st-form">
+                <h2>Заказать звонок</h2>
+                <label for="call-name">
+                    <input type="text" class="user_name" name="call-name" placeholder="ФИО" required>
+                </label>
+                <label for="call-phone">
+                    <input type="tel" class="user_phone" name="call-phone" placeholder="Телефон" required>
+                </label>
+                <button type="submit" class="btn_submit">Заказать</button>
+            </form>
+        </div>
+    </div>
+
+    <div class="popup j-popup call-form-success" id="success-popup-call">
+        <div class="popup-content">
+            <span class="close j-close-popup" id="close-success-call">&times;</span>
+            <p>Форма вторая успешно отправлена!</p>
+        </div>
+    </div>
+
+</body>
+</html>
